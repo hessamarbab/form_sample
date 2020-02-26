@@ -1,0 +1,20 @@
+a.link
+	{
+	font-size:1.5rem;
+	color:#ddd	;
+	box-shadow:0 0 1vw 1vw #ddd;
+	border-color:white;
+	text-decoration:none;
+	padding:2% 5%;
+	margin-left:-6px;
+	text-shadow: 0px 0px 10px white;
+	position:relative;
+	}
+div.link
+	{
+		color:white	;
+		background-color:black;
+		box-shadow:0 0 1vw 1vw #ddd;
+		padding:2%;
+		margin-top:5%;
+	}

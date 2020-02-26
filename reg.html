@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="form.css">
+<script src="myScript.js"></script>
+
+
+
+</head>
+<body>
+<div class="register-form" >
+<form method="post" action="register.php" target="_self"  >
+<table class="register-form">
+
+<tr>
+<td class="lbl">Name</td>
+<td class="inp">
+<input name="first" class="inp-name" onchange="fillCheck();" type="text"  autocomplete="on" placeholder="First name" autofocus></input>
+<input name="last" class="inpp inp-name" onchange="fillCheck();" type="text" placeholder="Last name"></input>
+</td>
+</tr>
+<tr>
+<td   style="color:#f60;text-align:right;font-size:1.2rem"id="alert0" ></td>
+</tr>
+<tr>
+<td class="lbl">Account</td>
+<td class="inp">
+<input  name="account" class="inpp inp-others"onchange="fillCheck();" type="text" placeholder="Account">
+</input></td>
+</tr>
+<tr>
+<td   style="color:#f60;text-align:right;font-size:1.2rem"id="alert1" ></td>
+</tr>
+<tr>
+<td class="lbl">Password</td>
+<td class="inp">
+<input name="pass" onchange="fillCheck();passCheck();" class="inpp inp-others" type="password" placeholder="password"  id="pass1"></input></td>
+</tr>
+<tr>
+<td   style="color:#f60;text-align:right;font-size:1.2rem"id="alert2" ></td>
+</tr>
+<tr>
+<td class="lbl">Repeat_Pass</td>
+<td class="inp">
+<input name="pass_rep" onchange="fillCheck();passCheck();" class="inpp inp-others" type="password"  placeholder="primary pass"  id="pass2">
+</input></td>
+</tr>
+
+<tr>
+<td  style="color:#f60;text-align:right;font-size:1.2rem"id="alert3" ></td>
+</tr>
+
+<tr>
+
+<td class="lbl">Gender</td>
+<td class="inp"> <input class="inp-rad" type="radio" value="male"name="gender">male</input> 
+<input class="inp-rad" type="radio" value="female" name="gender">female</input>
+</td>
+</tr>
+
+
+
+<tr>
+<td	 ><input class="btnme"  type="submit" value="create" name="submit"/></td>
+</tr>
+
+</table>
+</form>
+</div>
+</body>
+
+</html>
